@@ -13,7 +13,7 @@
 
     include '../gite_project2/_blocks/_header.php'
 ?>
-
+<!-- test -->
 
     <div class="galerie">
         <div class="galerie_titre">
