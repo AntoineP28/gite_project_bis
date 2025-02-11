@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"); 
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:root{
+    --vert:#027a48;
+    --main-green-color: #006C00;
+    --main-white-color: #fff;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+/*style antoine*/
+.headerbar{
+    width: 100%;
+    justify-content: space-around;;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.headerbar .headerNavBar{
+    display: flex;
+}
+
+.headerbar .headerImg img{
+    display: flex;
+    width: 120px;
+    height: auto;
+}
+
+.headerbar .headerNavBar nav{
+    width: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.headerbar .headerNavBar nav a{
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--main-green-color);
+}
+
+.headerbar .BtnConnexion{
+    display: flex;
+    position: relative;
+}
+
+.BtnConnexion button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-green-color);
+    color: var(--main-white-color);
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+/*--------------------------------------------*/
+
+
+
+
+
+
+header{
+    width: 100%;
+
+
+}
+
+
+section{
+    width: 100%;
+    /* border-bottom: 2px solid #006C00;
+    border-radius: 2px;
+    padding-bottom: 15px; */
+}
+
+.headerbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.headerbar .headerNavBar{
+    display: flex;
+}
+
+.headerbar .headerImg img{
+    display: flex;
+    width: 120px;
+    height: auto;
+}
+
+.headerbar .headerNavBar nav{
+    width: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.headerbar .headerNavBar nav a{
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    color: #006C00;
+}
+
+
+
+
+
+
+
+
+
+header .bandeau .header_info{
+
+    margin-top: 20px;
+
+}
+
+header .bandeau button{
+    border-radius: 1px;
+    width: 80px;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-right: 20px;
+    font-size: small;
+}
+
+body .galerie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #027a48;
+    width: 100%;
+    margin: 20px;
+
+}
+.galerie .galerie_titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.galerie .galerie_titre h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2em;
+}
+
+.galerie .galerie_titre h2{
+    font-size: 0.7em;
+    
+}
+
+.galerie .galerie_carte{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.galerie .galerie_carte .carte{
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+    width: 300px;
+
+}
+.galerie .galerie_carte .carte img{
+    width: 95%;
+    max-height: 330px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+
+
+}
+
+.galerie .galerie_carte .carte h2{
+    font-size: 1em;
+    text-align: center;
+
+}
+.galerie .galerie_carte .carte h3{
+    font-size: 0.6em;
+    text-align: center;
+    
+}
+
+.voir_tout{
+    width: 100px;
+    height: 50px;
+    border: 1px solid green;
+    color: var(--vert);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.trait{
+    width: 100%;
+    border: 2px solid var(--vert);
+    margin-bottom: 10px;
+
+}
+
+.bas .link{
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.vert{
+    color: var(--vert);
+
+
+}
+.copyright{
+    margin-left: 50px;
+
+}
+
+
+.carte img{
+    transition: transform 1s;
+}
+.carte img:hover{
+    --ms-transform: scale(1.1);
+    --webkit-tranform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.liste_gites{
+    display: flex
+;
+    flex-direction: row;
+    width: 100%;
+    gap: -9px;
+    /* height: 98px; */
+    margin: 20px;
+    padding: 25px;
+}
+.liste_gites img{
+    width: 50px;
+    height: auto;
+    
+    
+}
+.liste_carte{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: auto;
+  
+}
+
+
+.icone_liste{
+    color: #006C00;
+    font-size: 1.2em;
+    height: 20px;
+    width: 20px;
+
+}

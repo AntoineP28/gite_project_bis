@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* NAV BAR */
+
+header{
+    width: 100%;
+    border-bottom: 2px solid #006C00;
+    border-radius: 2px;
+}
+
+
+:root{
+    --main-green-color: #006C00;
+    --main-white-color: #fff;
+}
+
+.headerbar{
+    width: 100%;
+    justify-content: space-around;;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.headerbar .headerNavBar{
+    display: flex;
+}
+
+.headerbar .headerImg img{
+    display: flex;
+    width: 120px;
+    height: auto;
+}
+
+.headerbar .headerNavBar nav{
+    width: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.headerbar .headerNavBar nav a{
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--main-green-color);
+}
+
+header .headerbar .BtnConnexion{
+    display: flex;
+    position: relative;
+}
+
+header .BtnConnexion button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-green-color);
+    color: var(--main-white-color);
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.affiche_burger{
+    display: none;
+}
+
+/* Contact */
+
+.Contact{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(93, 93, 92, 0.5)), url("../_imgs/m.jpg");
+    background-size: cover;
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+}
+
+.Contact .headAll{
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Contact .HeadContact{
+    display: flex;
+    flex-direction: column;
+    color: var(--main-white-color);
+}
+
+.Contact .HeadContact h1{
+    font-size: 1.8rem;
+}
+
+.Contact .HeadContact p {
+    font-size: 1.3rem;
+}
+
+.ReseauContact .mail i{
+    font-size: 28px;
+}
+
+.ReseauContact .mail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--main-white-color);
+    gap: 20px;
+}
+
+.ReseauContact .mail .nousContacter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ReseauContact .mail .descmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--main-white-color);
+}
+
+.illustration{
+    width: 100%;
+}
+
+.illustration .illustrationImg img{
+    width: 100%;
+    height: 800px;
+}
+
+/* FORMULAIRE CONTACT */
+
+.formulaire .allFormulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    color: var(--main-green-color);
+}
+
+.formulaire .allFormulaire h2{
+    font-size: 40px;
+}
+
+.formulaire .allFormulaire p {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+}
+
+.test label{
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: var(--main-green-color);
+}
+
+.test input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.identifiant{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.ContactForm{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.selectForm{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.selectForm label{
+    font-size: 20px;
+}
+
+.selectForm select{
+    outline: none;
+    border: none;
+    height: 45px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--main-green-color);
+    padding-left: 20px;
+}
+
+.selectForm textarea{
+    outline: none;
+    border: none;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.selectForm textarea::placeholder{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.formulaire .allFormulaire form .btnForm{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.formulaire .allFormulaire form .btnForm button{
+    display: flex;
+    width: 25%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--main-green-color);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.Pictures .pictureLogo img{
+    width: 150px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.Pictures{
+    border-bottom: 3px solid #006C00;
+}
+
+.allFooter{
+    padding-top: 30px;
+    color: var(--main-green-color);
+}
+
+.reserver{
+    position: absolute;
+    padding-left: 50px;
+}
+
+.infoPolitique p{
+    margin-left: 20px;
+}
+
+.infoPolitique p:hover{
+    border-bottom: 2px solid #006C00;
+    padding-bottom: 5px;
+}
+
+.infoPolitique{
+    display: flex;
+    justify-content: end;
+    padding-right: 60px;
+}
+
+@media screen and (max-width: 650px)  {
+
+    .headerbar .headerNavBar{
+        display: none;
+    }
+
+    .headerbar{
+        padding-bottom: 0;
+    }
+
+    .headerImg{
+        display: none;
+    }
+
+    .affiche_burger{
+        display: flex;
+    }
+
+    header .burger{
+        display:block;
+    }
+    header .affiche_burger{   
+        display:block;
+        z-index: 100;
+        width: 30%;
+    }
+
+    header aside nav{
+        display: block;
+    }
+    header aside li{
+        font-family: "poppins", sans-serif;
+        font-size: 1.5em;
+        color: white;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    header aside li:hover{
+        font-family: "poppins",sans-serif;
+        font-size: 1.6em;
+        background-color: var(--vert);
+        color:white;
+        flex-direction: column;
+    }
+    
+    
+    header{
+        margin-bottom: 0px;
+        border-bottom: none;
+    }
+
+    header .burger{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Contact{
+        height: 700px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(93, 93, 92, 0.5)), url("../_imgs/m.jpg");
+        background-size: cover;
+        background-position: 25% 75%;
+        background-repeat: no-repeat;
+        margin-top: 20px
+    }
+
+    .Contact .HeadContact p{
+        width: 90%;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .Contact .headAll{
+        width: 100%;
+        justify-content: none;
+    }
+
+    .ReseauContact .mail i{
+        font-size: 28px;
+    }
+
+    .ReseauContact{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .ReseauContact .mail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: var(--main-white-color);
+        gap: 20px;
+    }
+    
+    .ReseauContact .mail .nousContacter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .ReseauContact .mail .descmail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: var(--main-white-color);
+    }
+
+    .ContactForm{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 30px;
+    }
+
+    .identifiant{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formulaire .allFormulaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        color: var(--main-green-color);
+    }
+
+    label{
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulaire .allFormulaire h2{
+        font-size: 30px;
+    }
+    
+    .formulaire .allFormulaire p {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .Pictures .pictureLogo img{
+        width: 150px;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    
+    .Pictures{
+        border-bottom: 3px solid #006C00;
+    }
+    
+    .allFooter{
+        padding-top: 30px;
+        gap: 30px;
+        color: var(--main-green-color);
+    }
+    
+    .reserver{
+        position: absolute;
+        padding-left: 50px;
+    }
+    
+    .infoPolitique p{
+        margin-left: 20px;
+    }
+    
+    .infoPolitique p:hover{
+        border-bottom: 2px solid #006C00;
+        padding-bottom: 5px;
+    }
+    
+    .infoPolitique{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-top: 60px;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .sidebar li{
+        color: var(--main-white-color);
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+}

@@ -1,0 +1,292 @@
+
+.affiche_burger{
+    display: none;
+
+}
+
+@media only screen and (min-width:740px){
+    header .bandeau .header_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .bandeau .header_info button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+
+    header .bandeau{
+        width: 100vw;
+        height: 250px;
+        background-color: #027a48;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+    }
+    header .bandeau .bienvenue {
+        display: flex    ;
+        flex-direction: column;
+        margin: 50px 20px;
+        padding: 10px;
+    }
+
+    header .bandeau .presentation{
+        display: flex;
+        flex-direction: column;
+        margin: 60px 20px;
+        padding: 10px 10px;
+        text-align: justify;
+   }
+    footer{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+    footer img{
+        width: 20%;
+        height: auto;
+        align-self: center;
+        padding-top: 30px;
+    }
+
+
+   footer .bas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        gap: 20px;
+
+
+    }
+
+    footer .bas .link{
+        display: flex;
+        gap: 20px;
+
+    }
+    
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:740px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 41vh;
+    }
+
+    footer img{
+        width: 100px;
+        padding-bottom: 20px;
+    }
+    
+    footer .bas{
+        display: flex;
+        flex-direction: column;
+        
+       }
+    footer .bas .link{
+        display: flex;
+
+        flex-direction: column;
+        gap: 20px;
+
+    }
+       
+    h1 {
+        font-size: 30px;
+    
+    }
+  
+    header .menu{
+        display:none;
+
+    }
+    header .burger{
+        display:block;
+    }
+    header .affiche_burger{
+        
+        display:block;
+        z-index: 100;
+        width: 30%;
+    }
+
+    header aside nav{
+        display: block;
+    }
+    header aside li{
+        font-family: "poppins", sans-serif;
+        font-size: 1.5em;
+        color: white;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    header aside li:hover{
+        font-family: "poppins",sans-serif;
+        font-size: 1.6em;
+        background-color: var(--vert);
+        color:white;
+        flex-direction: column;
+    }
+    
+    
+    header{
+        margin-bottom: 0px;
+
+    }
+
+    header .burger{
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .container{
+        padding: 0 10px;
+    }
+    header p{
+        padding: 0 20px;
+        margin: 0;
+        font-size: 17px;
+    }
+    header .headerblock{
+        justify-content: space-around;
+        height: 100vh;
+
+    }
+    header div img {
+        width: 150px;
+       
+    }
+    .burger {
+        width: 100vw;
+        height: 27px;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+    }
+    .burger #burger{
+        margin-left: 20px;
+    }
+
+    .burger span{
+        width: 30px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: white;
+        margin-bottom: 4px;
+    }    
+
+    .bas {
+        display: flex
+        ;
+                width: 100vw;
+                margin: 1px;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+
+    }
+    footer .footer-bloc h2 {
+        font-size: 1.6em;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+    footer .footer-bloc li {
+        font-size: 0.9em;
+        font-weight: 800;
+        text-align: center;
+        
+    }
+    .droite .fond {
+        position: absolute;
+        right: calc(50% - 187px);
+        background: linear-gradient(var(--tomato), var(--coral));
+        border-radius: 10px;
+        width: 187px;
+        height: 331px;
+    }
+    .droite img {
+        position: absolute;
+        right: 50%;
+        width: 150%;
+        height: auto;
+        transform: translate(46%, 64%);
+    }
+
+
+   header .bandeau{
+    width: 100vw;
+    height: 340px;
+    background-color: #027a48;
+    color: white;
+    display: flex
+;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    }
+    header .bandeau .header_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    header .bandeau .header_info button{
+        font-weight: bold;
+        font-size: 1.2em;
+        width: 100px;
+        gap: 50px;
+    }
+    
+    header .bandeau .bienvenue{
+        display: flex
+        ;
+            margin: 25px 20px;
+            padding: 5px;
+            flex-direction: column;
+            align-items: center;
+
+    }
+    header .bandeau .presentation {
+        display: flex
+;
+        flex-direction: column;
+        height: 164px;
+        margin: 0px 0px;
+
+        text-align: justify;
+    }
+
+    footer .bas{
+        flex-direction: column;
+    }
+
+
+    
+
+}

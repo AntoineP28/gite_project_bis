@@ -1,0 +1,64 @@
+a{
+    text-decoration: none;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexCol{
+    flex-direction: column;
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+}
+
+.spaceAround{
+    justify-content: space-around;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.flexEnd{
+    justify-content: flex-end;
+}
+
+.spaceCenter{
+    justify-content: center;
+}
+
+.itemCenter{
+    align-items: center;
+}
+
+.contentCenter{
+    align-content: center;
+}
+
+.relative{
+    position: relative ;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.contain{
+    object-fit: contain;
+}
+
+.generalContainer{
+    padding: 0 20%;
+}

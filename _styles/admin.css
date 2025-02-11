@@ -1,0 +1,72 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    
+
+}
+
+.form .box{
+    display: flex
+;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid green;
+    height: 583px;
+    gap: 17px;
+
+    padding: 16px;
+    justify-content: space-around;
+}
+.form .box input{
+    width: 100%;
+    font-size: 1.2em;
+}
+.form .box input a{
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.form .box button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-green-color);
+    color: var(--main-white-color);
+    outline: none;
+    border: none;
+    width:100%;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.form .box select{
+    width: 100%;
+    font-size: 1.2em;
+}
+
+
+.form .BtnConnexion button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-green-color);
+    color: var(--main-white-color);
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}

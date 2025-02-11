@@ -1,0 +1,106 @@
+:root{
+    --bar-width: 15px;
+    --bar-height: 2px;
+    --hamburger-gap: 6px;
+    --foreground: white;
+    --background: white;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    --marron:rgb(112, 71, 8);
+    --vert:#027a48;
+    --noir: #000000;
+}
+
+
+.hamburger-menu{
+    --x-width: calc(var(--hamburger-height)*1.41421356237);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    left: 5px;
+    z-index: 15;
+    cursor: pointer;
+}
+
+.hamburger-menu::before, 
+.hamburger-menu::after, 
+.hamburger-menu input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--noir);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing),
+                width var(--animation-timing),
+                rotate var(--animation-timing), 
+                translate var(--animation-timing),
+                background-color var(--animation-timing);
+
+
+}
+
+.hamburger-menu input{
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before{
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height)/-2);
+
+}
+.hamburger-menu:has(input:checked)::after{
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height)/2);
+
+}
+
+.hamburger-menu input:checked{
+    opacity: 0;
+    width: 0;
+
+}
+.sidebar img{
+    width: 80%;
+    height: auto;
+  
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    width: 180px;
+    height: 318px;
+  
+    padding: 20px 30px 0;
+    z-index: 10;
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    left: -2px;
+    border-radius: 0 0 34px;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    background-color: var(--vert);
+
+
+
+}
+
+.sidebar li{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar{
+    translate: 0;
+
+}
