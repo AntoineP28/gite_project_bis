@@ -9,3 +9,9 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove('active');
 });
+
+function masquerNotification(){
+    document.getElementById("zoneDeNotification").innerHTML="";
+}
+
+window.setTimeout(masquerNotification, 3000);

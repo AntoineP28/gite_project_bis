@@ -1,9 +1,17 @@
+<?php 
+
+    include($_SERVER["DOCUMENT_ROOT"]. '../gite_project2/_blocks/_hosts.php');
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../_styles/connexion.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/connexion.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Connexion</title>
 </head>
@@ -64,13 +72,13 @@
         </div>
         <div class="toggle-box">
             <div class="toggle-panel toggle-left">
-                <a href="contact.html"><img src="../_imgs/logo_blanc.png" alt=""></a>
+                <a href="contact.html"><img src="../gite_project2/_imgs/logo_blanc.png" alt=""></a>
                 <h1>Bienvenue !</h1>
                 <p>Vous n'avez pas de compte?</p>
                 <button class="btn register-btn">S'enregistrer</button>
             </div>
             <div class="toggle-panel toggle-right">
-                <a href="contact.html"><img src="../_imgs/logo_blanc.png" alt=""></a>
+                <a href="contact.html"><img src="../gite_project2/_imgs/logo_blanc.png" alt=""></a>
                 <h1>Bienvenue !</h1>
                 <p>Vous avez déjà un compte?</p>
                 <button class="btn login-btn">Login</button>

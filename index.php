@@ -24,7 +24,7 @@
         <div class="galerie_carte">
         <?php while($sGEF = $selectGites->fetch(PDO::FETCH_OBJ)){?>
             <div class="carte">
-                <img src="./_assets/_imgs/<?php echo $sGEF->gite_photo?>" alt="">
+                <img src="../gite_project2/_imgs/<?php echo $sGEF->gite_photo?>" alt="">
                 <h2><?php echo $sGEF->gite_nom?></h2>
                 <h3><?php echo $sGEF->type_name?></h3>
             </div>

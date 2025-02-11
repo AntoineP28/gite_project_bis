@@ -1,6 +1,6 @@
 
     <footer>
-        <img src="../_imgs/logo_vert.png" alt="">
+        <img src="../gite_project2/_imgs/logo_vert.png" alt="">
         <p class="trait"></p>
         <div class="bas">
           

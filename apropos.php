@@ -4,7 +4,7 @@
 
 <body>
 
-<?php include './_block/_header.php' ?>
+<?php include '../gite_project2/_blocks/_header.php' ?>
 
     <section class="aPropos flex flexCol spaceCenter textCenter">
         <h1>À PROPOS</h1>

@@ -18,7 +18,7 @@
 
     <?php while($sGEF = $selectGites->fetch(PDO::FETCH_OBJ)){?>
         <div class="liste_carte">
-            <img src="./_imgs/<?php echo $sGEF->gite_photo?>" alt=""></td>
+            <img src="../gite_project2/_imgs/<?php echo $sGEF->gite_photo?>" alt=""></td>
             <p><?php echo $sGEF->gite_nom?></p>
             <p><?php echo $sGEF->type_name?></p>
            

@@ -38,13 +38,13 @@ $selectTypes->execute();
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Gites en folie</title>
-    <link rel="stylesheet" href="./_styles/generic.css">
-    <link rel="stylesheet" href="./_styles/responsive.css">
-    <link rel="stylesheet" href="./_styles/style.css">
-    <link rel="stylesheet" href="../_styles/apropos.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/generic.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/responsive.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/style.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/apropos.css">
 
 
-    <link rel="stylesheet" href="./_styles/burger.css">
-    <link rel="stylesheet" href="./_styles/admin.css">
-    <link rel="stylesheet" href="./_styles/contact.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/burger.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/admin.css">
+    <link rel="stylesheet" href="../gite_project2/_styles/contact.css">
 </head>

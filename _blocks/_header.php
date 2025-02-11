@@ -2,7 +2,7 @@
         <section class="menu">
             <div class="headerbar flex flexrow">
                 <div class="headerImg">
-                    <a href="./index.php"><img src="./_imgs/logo_vert.png" alt=""></a>
+                    <a href="./index.php"><img src="../gite_project2/_imgs/logo_vert.png" alt=""></a>
                 </div>
                 <div class="headerNavBar">
                     <nav>
@@ -37,7 +37,7 @@
                     <input type="checkbox">
                 </label>
                 <aside class="sidebar">
-                        <img src="./_imgs/logo_blanc.png" alt="logo">
+                        <img src="../gite_project2/_imgs/logo_blanc.png" alt="logo">
 
                         <div class="flexCol">
                             
