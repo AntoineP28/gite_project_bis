@@ -87,6 +87,6 @@
     </div>
 
 
-    <script src="../_scripts/vue.js"></script>
+    <script src="../gite_project2/_scripts/vue.js"></script>
 </body>
 </html>

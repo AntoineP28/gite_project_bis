@@ -1,17 +1,17 @@
 <?php
   
-    include './_hosts.php'
+    include '../gite_project2/_blocks/_hosts.php'
 ?>
 
 <?php
-    include '_entete.php'
+    include '../gite_project2/_blocks/_entete.php'
 ?>
 
 <body>
 
 <?php
 
-    include '_header.php'
+    include '../gite_project2/_blocks/_header.php'
 ?>
 
 <div class="liste_gites">
