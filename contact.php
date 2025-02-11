@@ -1,10 +1,10 @@
-<?php include './_block/_hosts.php' ?>
+<?php include '../gite_project2/_blocks/_hosts.php' ?>
 
-<?php include './_block_entete.php' ?>
+<?php include '../gite_project2/_blocks/_entete.php' ?>
 
 <body>
 
-<?php include './_block_header.php' ?>
+<?php include '../gite_project2/_blocks/_header.php' ?>
 
     <section class="Contact flex spaceCenter">
         <div class="headAll flex flexCol">
@@ -90,7 +90,7 @@
         </div>
     </section>
 
-    <?php include './_block/_footer.php' ?>
+    <?php include '../gite_project2/_blocks/_footer.php' ?>
 
     <script src="https://kit.fontawesome.com/9efd7effdc.js" crossorigin="anonymous"></script>
 </body>

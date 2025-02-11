@@ -1,17 +1,17 @@
 <?php
-    include './_blocks/_hosts.php'
+    include '../gite_project2/_blocks/_hosts.php'
     
 ?>
 
 <?php
-    include './_block/_entete.php'
+    include '../gite_project2/_blocks/_entete.php'
 ?>
 
 <body>
 
 <?php
 
-    include './_block/_header.php'
+    include '../gite_project2/_blocks/_header.php'
 ?>
 
 
@@ -63,7 +63,7 @@
     </div>
     <?php
 
-        include './_block/_footer.php'
+        include '../gite_project2/_blocks/_footer.php'
     ?>
 </body>
 </html>

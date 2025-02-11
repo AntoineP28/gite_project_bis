@@ -1,5 +1,5 @@
 <?php
-    include './_block/_hosts.php'
+    include '../gite_project2/_blocks/_hosts.php'
 ?>
 
 

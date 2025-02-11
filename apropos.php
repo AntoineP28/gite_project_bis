@@ -1,6 +1,6 @@
-<?php include './_block/_hosts.php' ?>
+<?php include '../gite_project2/_blocks/_hosts.php' ?>
 
-<?php include './_block/_entete.php' ?>
+<?php include '../gite_project2/_blocks/_entete.php' ?>
 
 <body>
 
@@ -19,7 +19,7 @@
 
     </section>
 
-    <?php include './_block/_footer.php' ?>
+    <?php include '../gite_project2/_blocks/_footer.php' ?>
 
 
 </body>
