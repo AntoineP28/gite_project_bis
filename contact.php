@@ -1,10 +1,10 @@
-<?php include '_hosts.php' ?>
+<?php include './_block/_hosts.php' ?>
 
-<?php include '_entete.php' ?>
+<?php include './_block_entete.php' ?>
 
 <body>
 
-<?php include '_header.php' ?>
+<?php include './_block_header.php' ?>
 
     <section class="Contact flex spaceCenter">
         <div class="headAll flex flexCol">
@@ -90,7 +90,7 @@
         </div>
     </section>
 
-    <?php include '_footer.php' ?>
+    <?php include './_block/_footer.php' ?>
 
     <script src="https://kit.fontawesome.com/9efd7effdc.js" crossorigin="anonymous"></script>
 </body>

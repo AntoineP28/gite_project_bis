@@ -1,10 +1,10 @@
-<?php include '_hosts.php' ?>
+<?php include './_block/_hosts.php' ?>
 
-<?php include '_entete.php' ?>
+<?php include './_block/_entete.php' ?>
 
 <body>
 
-<?php include '_header.php' ?>
+<?php include './_block/_header.php' ?>
 
     <section class="aPropos flex flexCol spaceCenter textCenter">
         <h1>À PROPOS</h1>
@@ -19,7 +19,7 @@
 
     </section>
 
-    <?php include '_footer.php' ?>
+    <?php include './_block/_footer.php' ?>
 
 
 </body>

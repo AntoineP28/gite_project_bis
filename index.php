@@ -1,17 +1,17 @@
 <?php
-    include './_hosts.php'
+    include './_blocks/_hosts.php'
     
 ?>
 
 <?php
-    include './_entete.php'
+    include './_block/_entete.php'
 ?>
 
 <body>
 
 <?php
 
-    include './_header.php'
+    include './_block/_header.php'
 ?>
 
 
@@ -24,7 +24,7 @@
         <div class="galerie_carte">
         <?php while($sGEF = $selectGites->fetch(PDO::FETCH_OBJ)){?>
             <div class="carte">
-                <img src="./_imgs/<?php echo $sGEF->gite_photo?>" alt="">
+                <img src="./_assets/_imgs/<?php echo $sGEF->gite_photo?>" alt="">
                 <h2><?php echo $sGEF->gite_nom?></h2>
                 <h3><?php echo $sGEF->type_name?></h3>
             </div>
@@ -63,7 +63,7 @@
     </div>
     <?php
 
-        include '_footer.php'
+        include './_block/_footer.php'
     ?>
 </body>
 </html>
