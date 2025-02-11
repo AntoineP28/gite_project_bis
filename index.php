@@ -14,7 +14,7 @@
     include '../gite_project2/_blocks/_header.php'
 ?>
 <!-- test -->
-
+<!-- test1 -->
     <div class="galerie">
         <div class="galerie_titre">
             <h2>Découvrez</h2>
