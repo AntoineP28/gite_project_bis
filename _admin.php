@@ -1,10 +1,38 @@
 <?php
   
-    include '../gite_project2/_blocks/_hosts.php'
-?>
+    include($_SERVER["DOCUMENT_ROOT"].'../gite_project2/_blocks/_hosts.php');
 
-<?php
-    include '../gite_project2/_blocks/_entete.php'
+    include($_SERVER["DOCUMENT_ROOT"].'../gite_project2/_blocks/_entete.php');
+
+    $selectRoles = $db->prepare('SELECT * FROM gef_roles ORDER BY role_level ASC');
+    $selectRoles->execute();
+
+    $searchRoles = $db->prepare('SELECT * FROM gef_roles');
+    $searchRoles->execute();
+
+    $countRoles = count($searchRoles->fetchALL());
+
+    if(isset($_POST['add_role'])){
+        $name = $_POST['role_name'];
+        $level = $_POST['role_level'];
+
+        $addRole = $db->prepare('INSERT INTO gef_roles SET 
+        
+            role_name = ?,
+            role_level = ?
+        
+        ');
+        var_dump('add_role');
+
+        $addRole->execute([$name, $level]);
+
+            $_SESSION['flash']['success'] = "Le rôle a bien été ajouté.";
+
+            $_SESSION['flash']['danger'] = "Le rôle n'a pas pu être ajouté.";
+
+        echo "<script language='javascript'>document.location.replace(../gite_project2/index.php) </script>";
+
+    }
 ?>
 
 <body>
@@ -34,6 +62,20 @@
 
 </div>
     <div class="form formulaire generalContainer">
+
+        <form method="POST">
+            <h1>Ajouter un rôle</h1>
+            <div class="mb-3">
+                <label for="role_name" class="form-label">Nom du rôle</label>
+                <input type="text" class="form-control" id="role_name" name="role_name">
+            </div>
+            <div class="mb-3">
+                <label for="role_level" class="form-label">Niveau du rôle</label>
+                <input type="text" class="form-control" id="role_level" name="role_level">
+            </div>
+
+            <input type="submit" class="btn btn-primary" name="add_role">
+        </form>
         
         <form  class="allFormulaire" action="./_add_gite.php" method="POST" enctype="multipart/form-data">
             <h1>Ajout d'un Gites</h1>

@@ -1,17 +1,32 @@
 <?php
-    include '../gite_project2/_blocks/_hosts.php'
+    include './_blocks/_hosts.php'
     
 ?>
 
 <?php
-    include '../gite_project2/_blocks/_entete.php'
+    include './_blocks/_entete.php'
 ?>
 
 <body>
 
 <?php
 
-    include '../gite_project2/_blocks/_header.php'
+    include './_blocks/_header.php'
+?>
+<?php
+
+    if(isset($_GET['voir_tout'])){
+        
+        $_SESSION['listeGite']['listeGiteMini']=0;
+        $_SESSION['listeGite']['listeGiteMaxi']=100000;
+        
+     
+    }else{
+        
+        $_SESSION['listeGite']['listeGiteMini']=0;
+        $_SESSION['listeGite']['listeGiteMaxi']=4;
+        
+    }
 ?>
 <!-- test -->
 
@@ -24,46 +39,30 @@
         <div class="galerie_carte">
         <?php while($sGEF = $selectGites->fetch(PDO::FETCH_OBJ)){?>
             <div class="carte">
-                <img src="../gite_project2/_imgs/<?php echo $sGEF->gite_photo?>" alt="">
+                <a href="gite.php?id=<?php echo $sGEF->id_gite?>"> <img src="./_imgs/<?php echo $sGEF->gite_photo?>" alt=""></a>
+                
                 <h2><?php echo $sGEF->gite_nom?></h2>
                 <h3><?php echo $sGEF->type_name?></h3>
             </div>
         <?php } ?>
-            <!-- <div class="carte">
-                <img src="../_assets/_imgs/Product-2.png" alt="">
-                <h2>Gîte Evasion</h2>
-                <h3>Luxe</h3>
-            </div>
-            <div class="carte">
-                <img src="../_assets/_imgs/Product-1.png" alt="">
-                <h2>Gîte Nature</h2>
-                <h3>Basique</h3>
-            </div>
-
-            <div class="carte">
-                <img src="../_assets/_imgs/Product-4.png" alt="">
-                <h2>Gîte Familial</h2>
-                <h3>Confort</h3>
-            </div>
-
-            <div class="carte">
-                <img src="../_assets/_imgs/Product-5.png" alt="">
-                <h2>Gîte Romantique</h2>
-                <h3>Privé</h3>
-            </div>
-            <div class="carte">
-                <img src="../_assets/_imgs/Product.png" alt="">
-                <h2>Gîte Historique</h2>
-                <h3>Authentique</h3>
-            </div>
-         -->
 
         </div>
-        <button class="voir_tout">Voir tout</button>
+        <form action="">
+        <?php 
+            
+            if(isset($_GET['voir_ini'])){?>
+                <input type="submit" class="voir_tout" value="4 Premiers" name="voir_tout" >
+                <?php
+            }else{?>
+                <input type="submit" class="voir_tout" value="Voir tout" name="voir_ini" >
+                <?php
+            };
+        ?>
+        </form>
     </div>
     <?php
 
-        include '../gite_project2/_blocks/_footer.php'
+        include './_blocks/_footer.php'
     ?>
 </body>
 </html>
