@@ -14,5 +14,5 @@
         echo "Impossible de se connecter à la basse de données. $e";
         die();
 
-};
+    };
 ?>
